@@ -13,3 +13,5 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Databinding
 
 Databinding changes static to dynamic. It refers to the communication between TypeScript Code (Business Logic) and the Template (HTML).
+    - String Interpolation: ( `{{ data }}` )
+    - Property Binding: ( `[property]="data"` )
