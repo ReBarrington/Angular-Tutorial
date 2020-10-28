@@ -1,3 +1,5 @@
+// this file bundles components into packages
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -18,6 +20,7 @@ import { ServersComponent } from './servers/servers.component';
     FormsModule,
   ],
   providers: [],
+  // bootstrap recognizes AppComponent in the index.html file
   bootstrap: [AppComponent]
 })
 export class AppModule { }
