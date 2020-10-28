@@ -3,14 +3,18 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-servers',
   // use either template, with components written, or use templateUrl and point to the html file
-  template: `
-    <app-server></app-server>
-    <app-server></app-server>`,
+  templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
-
-  constructor() { }
+  allowNewServer = false;
+  
+  constructor() { 
+    // happens when component renders
+    setTimeout(() => {
+      this.allowNewServer = true;
+    }, 2000);
+  }
 
   ngOnInit(): void {
   }
